@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kiwi: #9FC23F;
+  --color-kiwi-hover: #8eaf38;
+  --color-kiwi-bg: #F6F6F6;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-kiwi-bg text-slate-900 antialiased;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Kiwiticketing Reconciliation",
+  "description": "Stripe and Database reconciliation tool for waterparks. Match orders, identify mismatches, and mark fraudulent transactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
