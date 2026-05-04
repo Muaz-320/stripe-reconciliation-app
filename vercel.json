@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/StripeDbReconciliation/:path*",
+      "destination": "https://dynamicpricing-api.dynamicpricingbuilder.com/api/StripeDbReconciliation/:path*"
+    }
+  ]
+}
