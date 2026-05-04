@@ -1,20 +1,18 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# stripe-reconciliation-app
 
-# Run and deploy your AI Studio app
+Admin portal for manual Stripe–database reconciliation (manual runs, reports, help).
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/a82e2539-a791-4bbe-a969-279309d3b314
+**Prerequisites:** Node.js
 
-## Run Locally
+1. Install dependencies: `npm install`
+2. Copy `.env.example` to `.env` and set variables as needed (`GEMINI_API_KEY`, optional `VITE_API_BASE_URL` / `API_BASE_URL`).
+3. Start dev server (Express + Vite): `npm run dev`
+4. Open `http://localhost:3000`
 
-**Prerequisites:**  Node.js
+## Scripts
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- `npm run dev` — development server with API proxy to the reconciliation backend (unless `USE_LOCAL_API_MOCK=true` in `.env`)
+- `npm run build` — production frontend build (`dist/`)
+- `npm run preview` — preview production build
